@@ -110,7 +110,7 @@ export class MenuScene extends Phaser.Scene {
 
         const btn = this.add.text(x, y + 46, '▶  PLAY', {
             fontSize: '14px', color: '#ffffff',
-            backgroundColor: Phaser.Display.Color.HexStringToColor(color).color.toString(16).padStart(6, '0'),
+            backgroundColor: color,
             padding: { x: 16, y: 6 }
         }).setOrigin(0.5).setInteractive({ useHandCursor: true });
 
